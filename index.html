@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주유창 | Personal Portfolio</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans KR",Arial,sans-serif;color:#17263c;background:#f5f7fa}
+header{height:75px;background:#142943;color:white;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;z-index:10}
+.logo{font-size:20px;font-weight:800;letter-spacing:1px}
+nav{display:flex;gap:25px}
+nav a{color:#dce6f2;text-decoration:none;font-size:13px}
+nav a:hover{color:#77baff}
+section{padding:90px 9%;scroll-margin-top:75px}
+.hero{min-height:580px;background:linear-gradient(120deg,#142943,#294d73);color:white;display:flex;align-items:center}
+.hero small{color:#a8c9ed;letter-spacing:3px}
+.hero h1{font-size:58px;margin:18px 0}
+.hero p{color:#d4dfec;line-height:1.9}
+.btn{display:inline-block;margin-top:20px;background:#5b9de0;color:white;padding:13px 25px;border-radius:5px;text-decoration:none}
+.heading{font-size:30px;margin-bottom:12px}
+.sub{color:#718096;margin-bottom:40px}
+.card{background:white;padding:30px;border-radius:12px;box-shadow:0 5px 25px #1529430d;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tag{color:#367fbd;font-size:12px;font-weight:bold;letter-spacing:2px}
+h3{margin-bottom:8px}
+p{line-height:1.8}
+.certificate{width:100%;border-radius:7px;border:1px solid #ddd;cursor:zoom-in}
+.detail{display:grid;grid-template-columns:130px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid #edf0f4}
+.detail strong{color:#68798c}
+.empty{padding:45px;text-align:center;color:#8a98a9;background:white;border:1px dashed #ccd5df;border-radius:10px}
+footer{background:#142943;color:#bdc9d8;text-align:center;padding:35px;font-size:13px}
+#viewer{display:none;position:fixed;inset:0;background:#000e;z-index:30;align-items:center;justify-content:center;padding:20px}
+#viewer img{max-width:95%;max-height:90vh}
+#viewer button{position:absolute;top:20px;right:30px;font-size:30px;color:white;background:none;border:0;cursor:pointer}
+@media(max-width:700px){
+header{padding:0 4%;height:auto;min-height:70px;flex-wrap:wrap}
+nav{gap:13px;overflow-x:auto;width:100%;padding:12px 0}
+nav a{white-space:nowrap;font-size:12px}
+section{padding:65px 6%}
+.hero h1{font-size:42px}
+.grid{grid-template-columns:1fr}
+.detail{grid-template-columns:100px 1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">JOO YOO CHANG.</div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#profile">PROFILE</a>
+<a href="#activities">ACTIVITIES</a>
+<a href="#certificate">CERTIFICATE</a>
+<a href="#projects">PROJECTS</a>
+<a href="#contact">CONTACT</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<small>PERSONAL PORTFOLIO · 2026</small>
+<h1>안녕하세요,<br>주유창입니다.</h1>
+<p>
+배우고 도전하며 성장하는 대학생입니다.<br>
+AI 기술과 새로운 가능성을 탐구하며<br>
+나만의 경쟁력을 만들어 가고 있습니다.
+</p>
+<a class="btn" href="#profile">포트폴리오 살펴보기 →</a>
+</div>
+</section>
+
+<section id="profile">
+<div class="tag">01 · ABOUT ME</div>
+<h2 class="heading">Profile</h2>
+<p class="sub">나의 기본 정보와 학력</p>
+<div class="card">
+<h2>주유창</h2>
+<p>한림성심대학교 재학</p>
+<div class="detail"><strong>이름</strong><span>주유창</span></div>
+<div class="detail"><strong>대학교</strong><span>한림성심대학교</span></div>
+<div class="detail"><strong>재학 기간</strong><span>2026년 3월 입학 ~ 2028년 졸업 예정</span></div>
+<div class="detail"><strong>고등학교</strong><span>춘천고등학교</span></div>
+<div class="detail"><strong>재학 기간</strong><span>2023년 입학 ~ 2025년 졸업</span></div>
+</div>
+</section>
+
+<section id="activities" style="background:#edf2f7">
+<div class="tag">02 · EXPERIENCE</div>
+<h2 class="heading">Research & Activities</h2>
+<p class="sub">교육 및 다양한 활동 기록</p>
+<div class="card">
+<h3>Certificate</h3>
+<p>AI 윤리 교육 수료 및 학습 활동</p>
+<a class="btn" href="#certificate">수료증 자세히 보기 →</a>
+</div>
+</section>
+
+<section id="certificate">
+<div class="tag">03 · CERTIFICATION</div>
+<h2 class="heading">Certificate</h2>
+<p class="sub">나의 교육 수료 및 인증 내역</p>
+<div class="grid">
+<div class="card">
+<div class="tag">UNESCO · LG AI RESEARCH</div>
+<h2>Global MOOC on the Ethics of AI</h2>
+<p>인공지능 윤리에 관한 온라인 교육 과정</p>
+<div class="detail"><strong>수료자</strong><span>주유창</span></div>
+<div class="detail"><strong>수료일</strong><span>2026. 09. 20.</span></div>
+<div class="detail"><strong>교육기관</strong><span>UNESCO · LG AI Research</span></div>
+<div class="detail"><strong>플랫폼</strong><span>Coursera</span></div>
+<p><a href="https://coursera.org/verify/5Z0SSJLK2J69" target="_blank">수료증 진위 확인 ↗</a></p>
+</div>
+<div class="card">
+<div class="tag">CERTIFICATE IMAGE</div>
+<h3>수료증 원본</h3>
+<p>이미지를 클릭하면 크게 확인할 수 있습니다.</p>
+<img class="certificate" src="Screenshot 2026-11-16 091601.png" alt="UNESCO AI Ethics Certificate" onclick="showImage(this.src)">
+</div>
+</div>
+</section>
+
+<section id="projects" style="background:#edf2f7">
+<div class="tag">04 · MY WORK</div>
+<h2 class="heading">AI Projects</h2>
+<p class="sub">프로젝트 및 학습 결과물</p>
+<div class="empty">아직 등록된 프로젝트가 없습니다.</div>
+</section>
+
+<section id="contact">
+<div class="tag">05 · CONTACT</div>
+<h2 class="heading">Thank You</h2>
+<p class="sub">주유창의 포트폴리오를 방문해 주셔서 감사합니다.</p>
+<div class="card">
+<h2>JOO YOO CHANG.</h2>
+<p>끊임없이 배우고 성장하겠습니다.</p>
+</div>
+</section>
+
+<footer>
+JOO YOO CHANG · PERSONAL PORTFOLIO<br>
+© 2026 All Rights Reserved.
+</footer>
+
+<div id="viewer" onclick="this.style.display='none'">
+<button>×</button>
+<img id="largeImage" alt="확대된 수료증">
+</div>
+
+<script>
+function showImage(src){
+document.getElementById('largeImage').src=src;
+document.getElementById('viewer').style.display='flex';
+}
+</script>
+</body>
+</html>
